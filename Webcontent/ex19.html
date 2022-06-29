@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+	
+	<h2>계산기</h2>
+	
+	<input id="display" type="text" value=""><br>
+	
+	<!-- <button id="btnBack" type="button">←</button>
+	<br> -->
+	
+	<button id="btn7" type="button">7</button>
+	<button id="btn8" type="button">8</button>
+	<button id="btn9" type="button">9</button>
+	<button id="btnDiv" type="button">/</button>
+	<br>
+	
+	<button id="btn4" type="button">4</button>
+	<button id="btn5" type="button">5</button>
+	<button id="btn6" type="button">6</button>
+	<button id="btnMtp" type="button">*</button>
+	<br>
+	
+	<button id="btn1" type="button">1</button>
+	<button id="btn2" type="button">2</button>
+	<button id="btn3" type="button">3</button>
+	<button id="btnPlus" type="button">+</button>
+	<br>
+	
+	<button id="btnAc" type="button">ac</button>
+	<button id="btn0" type="button">0</button>
+	<button id="btnResult" type="button">=</button>
+	<button id="btnMinus" type="button">-</button>
+	<br>
+	
+
+</body>
+<script type="text/javascript">
+	window.onload = function(){
+		
+		var display = document.getElementById("display");
+		
+		var div = document.getElementById("btnDiv");
+		var mtp = document.getElementById("btnMtp");
+		var plus = document.getElementById("btnPlus");
+		var minus = document.getElementById("btnMinus");
+		var ac = document.getElementById("btnAc");
+		var result = document.getElementById("btnResult");
+
+		var btn1 = document.getElementById("btn1");
+		var btn2 = document.getElementById("btn2");
+		var btn3 = document.getElementById("btn3");
+		var btn4 = document.getElementById("btn4");
+		var btn5 = document.getElementById("btn5");
+		var btn6 = document.getElementById("btn6");
+		var btn7 = document.getElementById("btn7");
+		var btn8 = document.getElementById("btn8");
+		var btn9 = document.getElementById("btn9");
+		var btn0 = document.getElementById("btn0");
+		
+		//노출되는 문자열 생성
+		var str = "";
+
+		btn1.onclick = function(){
+			str += 1;
+			display.value = str;
+		}
+
+		btn2.onclick = function(){
+			str += 2;
+			display.value = str;
+		}
+
+		btn3.onclick = function(){
+			str += 3;
+			display.value = str;
+		}
+
+		btn4.onclick = function(){
+			str += 4;
+			display.value = str;
+		}
+
+		btn5.onclick = function(){
+			str += 5;
+			display.value = str;
+		}
+
+		btn6.onclick = function(){
+			str += 6;
+			display.value = str;
+		}
+
+		btn7.onclick = function(){
+			str += 7;
+			display.value = str;
+		}
+
+		btn8.onclick = function(){
+			str += 8;
+			display.value = str;
+		}
+
+		btn9.onclick = function(){
+			str += 9;
+			display.value = str;
+		}
+
+		btn0.onclick = function(){
+			str += 0;
+			display.value = str;
+		}
+		
+	}
+	
+	
+	
+</script>
+</html>
